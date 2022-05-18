@@ -1,0 +1,487 @@
+/*=== GERAL =====*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    
+}
+
+:root {
+    --dark-brown: #252323;
+    --light-brown: #534c4c;
+    --lightBlue: #00bac6;
+    --blue: #380d9dbe;
+    --text: #8b8b8b;
+  
+    font-size: 62.5%;
+    
+    
+}
+
+body{
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1.6rem;
+    width: 100vw;
+    margin: 0 auto;
+    overflow-x: hidden;
+}
+
+/*=== HEADER =====*/
+
+.col-100{
+    width: 100vw;
+    
+}
+
+.color{
+    height: 6rem;
+    background-color: var(--dark-brown);     
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    width: 98rem;
+    height: 6rem;
+    
+    margin: 0 auto;
+}
+
+#header{
+    padding: 0 1.5rem;
+}
+
+.redes-sociais ul{
+    gap: 2.8rem;
+    align-items: center;
+}
+
+.redes-sociais ul li,
+nav ul li{
+    list-style: none;
+    
+}
+
+.redes-sociais ul{
+    display: flex;
+}
+
+nav{
+    border-bottom: 3px solid #efefef;
+    height: 8.4rem;
+}
+
+nav .sobre{
+    font-weight: bold;
+}
+
+nav ul{
+    display: flex;
+    padding-top: .9rem;
+}
+
+nav ul li{
+    margin-left: 1.5rem;
+    height: 3rem;
+
+}
+
+nav ul li:hover{
+    border-bottom: 2px solid var(--blue);  
+
+}
+
+nav ul li a:hover{
+    color: var(--blue);
+}
+
+
+nav ul li a{
+    text-decoration: none;
+    color: var(--text);
+}
+
+
+nav input{
+    width: 19rem;
+    height: 3.5rem;
+    padding: 10px;
+
+    border: 1px solid #d6d6d6;
+
+    background-image: url('./img/search.png');
+    background-repeat: no-repeat;
+    background-position: 93%;
+}
+
+/***MAIN***/
+
+button.slick-prev{
+    font-size: 0;
+    border: none;
+    width: 2.5rem;
+    height: 5.1rem;
+    background-color: transparent;
+    background-image: url('./img/arrow1.png');
+
+    position: absolute;
+    z-index: 9;
+    top: 16.5rem;
+    left: 26rem;
+}
+
+button.slick-next{
+    font-size: 0;
+    border: none;
+    width: 2.5rem;
+    height: 5.1rem;
+    background-color: transparent;
+    background-image: url('./img/arrow2.png');
+
+    position: absolute;
+    z-index: 9;
+    top: 16.5rem;
+    right: 20rem;
+}
+
+.slick-dots li button{
+    font-size: 0;
+    border: 4px solid white;
+    width: 1.6rem;
+    height: 1.6rem;
+    background: transparent;
+    border-radius: 50%;
+    cursor: pointer;   
+}
+
+.slick-dots{
+    
+    margin: 0 auto;
+    width: 50%;
+    position: absolute;
+
+    top: 40rem;
+    left: 45%;
+}
+
+li.slick-active button{
+    background: var(--lightBlue);
+}
+
+.slick-dots li{
+    display: inline-block;
+    padding-left: 1rem;
+}
+
+/* INFORMATION */
+
+.informacao{
+    display: flex;
+    flex-direction: row;
+
+    width: 73.5%;
+
+    margin: 0 auto;
+    padding-block: 6rem;
+    
+}
+
+.textos{
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+
+    gap: 2.8rem;
+
+}
+
+.textos h1, .textos p{
+    font-weight: 0;
+    color: var(--text);
+}
+
+.textos h1{
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+
+
+}
+
+.textos h1 strong{
+    color: black;
+    padding-inline: .6rem;
+}
+
+.textos p{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+/* CONTEUDOS */
+.conteudo{
+    display: flex;
+    
+
+    width: 80%;
+    margin: 0 auto;
+    gap: 5rem;
+}
+
+.blocos{
+    width: 33.3%;
+    text-align: center;
+    color: var(--text);
+}
+
+.blocos h3{
+    margin-top: 1.8rem;
+    margin-bottom: 1.4rem;
+}
+
+.blocos p{
+    margin-bottom: 2.7rem;
+}
+
+.blocos h3 strong{
+    font-weight: bold;
+    color: black;
+}
+
+.blocoImagens::before{
+    width: 100%;
+    display: inline-block;
+    content: "";
+    height: 5.2rem;
+    background-image: url("./img/before.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: white;
+}
+
+.imagens{
+    width: 73.5%;
+
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+
+    margin: 0 auto;
+}
+
+.grid{
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+
+}
+
+.grid div{
+    display: grid;
+    place-items: center;
+
+
+    border: 1px solid #8b8b8b54;
+
+    color: var(--text);
+
+
+    
+
+    
+
+}
+
+.gridFlex{
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+}
+
+.gridFlex img{
+    height: 18.5rem;
+    width: 32rem;
+    padding: .5rem;
+}
+
+.grid h3{
+    margin-top: 2rem;
+}
+
+.grid p{
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.sponsors{
+    display: flex;
+    align-items: center;
+
+    background-color: white;
+    height: 15rem;
+    
+    
+}
+
+.sponsorsImagens{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+    width: 72%;
+    margin: 0 auto;
+    
+    position: relative !important;
+    padding-block: 6.5rem;
+
+
+    
+}
+
+.sponsorsImagens a{
+    display: flex;
+}
+
+.sponsorsImagens a img:hover{
+    padding-bottom: 2rem !important;
+    transition: 350ms;
+    transition-timing-function: linear;
+}
+
+/*FOOTER*/
+
+.footerOutros{
+    display: flex;
+
+    gap: 1.4rem;
+
+    padding-block: 4rem;
+    color: var(--text);
+
+    width: 75%;
+    margin: 0 auto;
+}
+
+.footerOutros div{
+    width: 25%;
+    margin-left: 3rem;
+}
+
+.popular{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+.popular img{
+    align-self: flex-start;
+}
+
+.tags{
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+
+    gap: 3rem;
+}
+
+.tags p{
+    font-size: 1.7rem;
+    font-weight: 0;
+}
+
+.about{
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+
+    gap: 3rem;
+}
+
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: justify;
+}
+
+.contact img{
+    align-self: flex-start;
+    margin-left: 1rem;
+    margin-right: 2rem;
+}
+
+
+.footerRights{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 70%;
+    margin: 0 auto;
+    padding-block: 5rem;
+
+
+    background-color: var(--dark-brown);
+    color: var(--text);
+
+}
+
+
+.footerRights strong{
+    
+    color: var(--text);
+    font-weight: bold;
+}
+
+.content1{
+    background-color: var(--light-brown);
+}
+
+.content2{
+    background-color: var(--dark-brown);
+}
+
+.content2 .redes-sociais ul li a.git img{
+    width: 28px;
+    height: 28px;
+
+    color: var(--text);
+}
+    
+
+
+/*MEDIA QUERIES*/
+
+
+@media screen and
+(min-width: 480px) and
+(max-width: 768px){
+    col-100{
+        width: 100vw;
+    }
+
+    .color{
+        width: 100vw;
+    }
+
+
+
+
+}
+
+
+
+
+
+
+
